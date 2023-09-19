@@ -1,0 +1,555 @@
+:root{
+        --mainColor:#343434;
+
+}
+*{
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* 
+font-family: 'Caveat', cursive;
+font-family: 'Poppins', sans-serif;
+
+*/
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:
+    linear-gradient(to left,rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.608)),
+    url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+ 
+}
+
+.navbar-ex {
+    padding: 20px 0 30px;
+    background-color:rgba(0, 0, 0, 0.100) ;
+    border: none;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* position: fixed; */
+    
+}
+span.icon{
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.navbar-brand{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.navbar-nav .nav-link.active , .navbar-nav .nav-link{
+    position: relative;
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active::after , .navbar-nav .nav-link::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 80%;
+    left: 8px;
+    transition: all 1s;
+}
+.navbar-nav .nav-link.active:hover::after , .navbar-nav .nav-link:hover::after{
+width: 80%;
+    }
+    
+    .intro-text{
+        height: 100vh;
+        text-align: center;
+        color: #fff;
+        font-size: 2rem;
+      
+    }
+
+    .intro-text h1::after{
+        content: "|";
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: 500;
+        animation: writer 8s infinite  ;
+       
+        
+    }
+    .intro-text h1{
+        font-size: 3rem;
+        font-weight: 700;
+        
+    }
+    @keyframes writer {
+        0%{
+            content: "I Am|";
+        }
+       
+        12%{
+            content: "I Am |";
+            
+        }
+       
+        40%{
+            content: "I Am Designer|";
+    
+        }
+        42%{
+            content: "I Am Designe|";
+    
+        }
+        44%{
+            content: "I Am Design|";
+    
+        }
+        45%{
+            content: "I Am Desig|";
+    
+        }
+        47%{
+            content: "I Am Desi|";
+    
+        }
+        49%{
+            content: "I Am Des|";
+    
+        }
+        51%{
+            content: "I Am De|";
+    
+        }
+        52%{
+            content: "I Am D|";
+    
+        }
+        54%{
+            content: "I Am|";
+    
+        }
+        56%{
+            content: "I A|";
+    
+        }
+        58%{
+            content: "I|";
+    
+        }
+        60%{
+            content: "|";
+    
+        }
+        64%{
+            content: "F|";
+    
+        }
+        67%{
+            content: "Fr|";
+    
+        }
+        70%{
+            content: "Fro|";
+    
+        }
+        73%{
+            content: "Fron|";
+        }
+        76%{
+            content: "Front|";
+        }
+        79%{
+            content: "Fron|";
+        }
+        82%{
+            content: "Fro|";
+    
+        }
+        86%{
+            content: "Fr|";
+    
+        }
+        90%{
+            content: "F|";
+    
+        }
+        100%{
+            content: "|";
+    
+        }
+    }
+   
+    .intro-text .icn{
+        font-size: 0.8rem;
+    }
+    .intro-text .icn i{
+        background-color: rgb(15, 15, 15);
+        padding: 10px;
+        border-radius: 50%;
+    }
+    
+
+  
+    .skills .item{
+        margin: 0 0 30px;
+        background-color: #f7f7f7;
+        box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) inset;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        
+    }
+
+     .skills .skills-progress {
+        height: 25px;
+        padding: 5px 10px;
+        background-color: black;
+        color: #fff;
+        border-radius: 5px;
+    
+    }
+    .one{
+        width: 95%;
+        height: 100%;
+    }
+    .two{
+        width: 80%;
+        height: 100%;
+    }
+    .three{
+        width: 90%;
+        height: 100%;
+    }
+     .skills h6 {
+        font-size: 15px;
+        margin-top: auto;
+        color: #fff;
+        z-index: 222;
+    }
+   .about-img img{
+    width: 100%;
+   }
+   .about-img::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-image:url(../img/dots.png) ;
+    background-repeat: repeat;
+    position: absolute;
+    top: 28%;
+    right: 28%;
+    z-index: -555;
+
+   }
+   .about-text{
+       font-size:1rem;
+       font-weight: 600;
+       line-height: 1.6;
+   }
+   .about-h{
+    color: var(--mainColor);
+    font-weight: 900;
+    font-size: 2rem;
+    margin:1rem 0 1rem ;
+  }
+
+.sup-title{
+
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #777;
+}
+
+.about-btn a {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    transition: all 1s;
+}
+.about-btn .fr{
+    color: #eee;
+    background-color: #111;
+}
+.about-btn a.fr:hover{
+    background-color: #fff;
+    color: #111;
+}
+.about-btn a.sc:hover{
+    background-color: #111;
+    color: #eee;
+}
+.header h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--mainColor);
+    position: relative;
+}
+.header h2::after{
+    content: "";
+    width: 40%;
+    height: 15px;
+    background-image: url(../img/dots.png);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#service{
+    background: #f7f7f7;
+}
+#service h3{
+    color: var(--mainColor);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+#service p{
+    font-size: 0.9rem;
+    color: #969faf;
+    font-weight: 500;
+}
+#service i
+{
+    font-size: 2rem;
+    background: #f7f7f7;
+    padding: 1.5rem;
+    border-radius: 50%;
+    font-weight: 800;
+    transition: all 0.7s;
+}
+#service .item:hover i
+{
+    background-color: var(--mainColor);
+    color: #eee;
+    
+}
+
+
+/* portfolio */
+
+.nav-tabs  {
+    border: none;
+    margin: 2.5rem;
+}
+
+ .nav-tabs .nav-link.active {
+    border: none;
+    position: relative;
+    color: var(--mainColor);
+    font-weight: 700;
+}
+.nav-tabs .nav-link{
+    border: none;
+    position: relative;
+    color: var(--mainColor);
+    font-weight: 700;
+    margin:0rem;
+}
+ .nav-tabs .nav-link.active::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: var(--mainColor);
+    position: absolute;
+    top: 80%;
+    left: 8px;
+    transition: all 1s;
+}
+.nav-tabs .nav-link:hover {
+    border: none;
+}
+.nav-tabs .nav-link:hover::after , .nav-tabs .nav-link.active:hover:after{
+    border: none;
+    width: 80%;
+}
+
+/* portfolio content */
+
+.port-item{
+position: relative;
+overflow: hidden;
+margin-bottom: 2rem;
+font-size: 0.8rem;
+}
+.port-item .layer{
+    position: absolute;
+    
+    left: 10px;
+    top: 80px;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.859);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+}
+.icn{
+    position: relative;
+    top: 5%;
+    transition: all 0.4s ease-in;
+
+}
+.port-item .layer h5{
+    position: relative;
+    bottom: 5%;
+    transition: all 0.5s;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.port-item:hover .icn, .port-item:hover h5{
+    top: 0;
+}
+.port-item:hover .layer  {
+    top: 10px;
+    opacity: 1;
+    
+}
+.icn i{
+    background-color: #111;
+    color: #eee ;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    border:solid 1px black;
+    
+}
+.icn i:hover{
+    background-color: rgb(255, 255, 255);
+    color: #111;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+#clients{
+    background: #f7f7f7;
+}
+
+.car-img{
+    width: 120px;
+    height: 120px;
+
+}
+.carousel-indicators [data-bs-target] {
+    height: 10px;
+    width: 10px;
+    background-color: #111;
+    border-radius: 50%;
+}
+.cont-itm{
+    font-size: 1.2rem;
+    
+}
+.cont-itm h3{
+    font-weight: 800;
+}
+.cont-itm p{
+    color: #969faf;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.cont-itm .icn{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.cont-itm .icn i{
+    padding: 10px;
+}
+.card {
+    overflow: hidden;
+    position: relative;
+}
+.image{
+    overflow: hidden;
+    display: block;
+}
+.card .image img
+{
+    transition: all 1s cubic-bezier(.64,.02,.32,.76) ;
+
+}
+
+.card:hover img{
+    scale: 1.5;
+}
+input{
+    background-color: #777;
+}
+footer{
+    height: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #eee;
+    background-color: black;
+}
+#contact {background-color:#a4a4a4;}
+    /* desktop */
+
+    @media screen and (min-width:1001px ) {
+        .container{
+            width: 100%;
+        }
+    
+    }
+    /* tablet */
+        @media screen and (max-width:1000px) and (min-width:800px) {
+    
+        }
+        
+        
+    /* Tablet land */
+        @media screen and (max-width:979px) and (min-width:770px) {
+        
+            /* .carousel-inner {
+                width: 90%;
+            }
+            
+            
+            .carousel-item {
+                width: 100% ;
+                
+            } */
+    }
+    
+     /* large phone (landscape) */
+        @media screen and (max-width:769px) and (min-width:500px) {
+            /* .carousel-inner {
+                width: 100%;
+            }
+            
+            
+            .carousel-item {
+                width: 100% ;
+                
+            } */
+        }
+     /* small phone */
+        @media screen and (max-width:500px) {
+            *{
+                font-size: 16px;
+            }
+            .about-img::after{
+                display: none;
+            }
+            /* .carousel-inner {
+                width: 100%;
+            }
+            
+            
+            .carousel-item {
+                width: 100% ;
+                
+            } */
+    }
